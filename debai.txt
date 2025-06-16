@@ -1,0 +1,661 @@
+CON2_28 - TỔ HỢP SỐ CÓ TỔNG BẰNG X
+ Báo lỗi
+Đề bài
+Cho mảng A[] gồm N số nguyên dương phân biệt và số X. Nhiệm vụ của bạn là tìm phép tổ
+
+hợp các số trong mảng A[] có tổng bằng X. Các số trong mảng A[] có thể được sử dụng nhiều
+
+lần. Mỗi tổ hợp các số của mảng A[] được in ra theo thứ tự không giảm các số. Ví dụ với A[]
+
+= {2, 4, 6, 8}, X = 8 ta có các tổ hợp các số như sau:
+
+[2, 2, 2, 2], [2, 2, 4], [2, 6], [4, 4], [8].
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số N và X; dòng tiếp theo đưa vào N số của mmảng A[]; các số được viết cách nhau một vài khoảng trống.
+T, N, X, A[i] thỏa mãn ràng buộc: 1≤T ≤10; 1≤X, A[i]≤100. N ≤ 20.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng. Mỗi đường tổ hợp được bao bởi cặp kýtự [, ]. Đưa ra -1 nếu không có tổ hợp nào thỏa mãn yêu cầu bài toán.
+
+Ví dụ
+Input #1 
+
+1
+4 8
+2 4 6 8
+Output #1 
+
+[2 2 2 2] [2 2 4] [2 6] [4 4] [8]
+
+CON2_29 - DI CHUYỂN TRONG MA TRẬN
+ Báo lỗi
+Đề bài
+Cho ma trận A[M][N]. Nhiệm vụ của bạn là đưa ra tất cả các đường đi từ phần tử A[0][0] đến
+
+phần tử A[M-1][N-1]. Bạn chỉ được phép dịch chuyển xuống dưới hoặc sang phải phần tử liền
+
+kề với vị trí hiện tạ
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số M, N tương ứng với số hàng và số cột của ma trận; dòng tiếp theo đưa vào các phần tử của ma trận A[][]; các số được viết cách nhau một vài khoảng trống.
+T, M, N, A[i][j] thỏa mãn ràng buộc: 1≤T ≤10; 1≤M, N, A[i][j]≤100.
+
+Dữ liệu ra
+Output:
+
+Đưa ra số cách di chuyển của mỗi test theo từng dòng.
+Giải thích test 1: Có 3 cách di chuyển là [1 4 5 6], [1 2 5 6] và [1 2 3 6].
+
+Ví dụ
+Input #1 
+
+2
+2 3
+1 2 3
+4 5 6
+2 2
+1 2
+3 4
+Output #1 
+
+3 
+2
+
+CON4_23 - GẤP ĐÔI DÃY SỐ
+ Báo lỗi
+Đề bài
+Một dãy số tự nhiên bắt đầu bởi con số 1 và được thực hiện N-1 phép biến đổi “gấp đôi” dãy số như sau: Với dãy số A hiện tại, dãy số mới có dạng A, x, A trong đó x là số tự nhiên bé nhất chưa xuất hiện trong A.
+
+Ví dụ với 2 bước biến đổi, ta có [1][1 2 1][1 2 1 3 1 2 1]. Các bạn hãy xác định số thứ K trong dãy số cuối cùng là bao nhiêu?
+
+
+Dữ liệu vào
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+
+Mỗi test gồm số nguyên dương N và K (1 ≤ N ≤ 50, 1 ≤ K ≤ 2^N- 1).
+
+
+Dữ liệu ra
+Với mỗi test, in ra đáp án trên một dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+3 2
+4 8
+Output #1 
+
+2
+4
+
+CON4_34 - TÍCH ĐA THỨC
+ Báo lỗi
+Đề bài
+Cho hai đa thức P và Q được biểu diễn như một mảng bao gồm các hệ số của đa thức. Ví dụ với P(x) = 5 + 0x^1+10x^2+ 6x^3được biểu diễn như mảng P[] ={5, 0, 10, 6}. Hãy đưa ra đa thức R = P×Q theo các hệ số của R với cách biểu diễn như trên.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng thứ nhất đưa vàohai số M, N tương ứng với lũy thừa lớn nhất của đa thức P và Q; dòng tiếp theo đưa vàoM số là hệ số của đa thức P; dòng cuối cùng đưa vào M số là hệ số của đa thức Q.
+
+T, M, N, P[i], Q[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤M, N≤100; 1≤P[i], Q[i]≤100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+4 3
+1 0 3 2
+2 0 4
+5 4
+1 9 3 4 7
+4 0 2 5
+Output #1 
+
+2 0 10 4 12 8
+4 36 14 39 79 23 34 35
+
+CON4_35 - DÃY CON LIÊN TIẾP CÓ TỔNG LỚN NHẤT
+ Báo lỗi
+Đề bài
+Cho mảng A[] gồm N số có cả các số âm và số dương. Nhiệm vụ của bạn là tìm mảng con liên tục có tổng lớn nhất của mảng. Ví dụ với mảng A[]={-2, -5, 6, -2,-3, 1, 5, -6} ta có kết quả là 7 tương ứng với dãy con {6, -2, -3, 1, 5}.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vàohai số N tương ứng với số phần tử của mảng; dòng tiếp theo đưa vào N số A[i]; các sốđược viết cách nhau một vài khoảng trống.
+
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤ N≤100; -100≤A[i] ≤100.
+
+
+Dữ liệu ra
+Đưa ra tổng con liên tục lớn nhất của mỗi test theo từng dòng
+
+
+Ví dụ
+Input #1 
+
+1
+8 
+-2 -5 6 -2 -3 1 5 -6
+Output #1 
+
+7
+
+CON5_17 - DÃY SỐ BI-TONIC
+ Báo lỗi
+Đề bài
+Một dãy số được gọi là Bi-tonic nếu nó được chia thành hai dãy đầu tăng dần và dãy tiếp theo giảm dần. Nhiệm vụ của bạn là tìm tổng lớn nhất dãy con Bi-tonic của dãy số A[]. Ví dụ với dãy A[] = {1, 15, 51, 45, 33, 100, 12, 18, 9} ta có kết quả là 194 tương ứng với dãy Bi-tonic {1, 15, 51, 100, 18, 9}.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưavào N là số phần tử của dãy A[]; dòng tiếp theo đưa vào N số A[i]; các số được viết
+
+cách nhau một vài khoảng trống.
+
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N ≤100; 0≤A[i] ≤100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+
+Ví dụ
+Input #1 
+
+2 
+6
+80 60 30 40 20 10
+9 
+1 15 51 45 33 100 12 18 9
+Output #1 
+
+210
+194
+
+CON5_2 - DÃY CON TĂNG DÀI NHẤT
+ Báo lỗi
+Đề bài
+Cho một dãy số nguyên gồm N phần tử A[1], A[2], ... A[N]. Biết rằng dãy con tăng là 1 dãy A[i1],... A[ik]
+
+thỏa mãn i1< i2< ... < ikvà A[i1] < A[i2] < .. < A[ik]. Hãy cho biết dãy con tăng dài nhất của dãy này có bao nhiêu phần tử?
+
+
+Dữ liệu vào
+Dòng 1 nhập số lượng test T>0
+
+Dòng 2 gồm 1 số nguyên là số N (1 ≤ N ≤ 1000). Dòng thứ 3 ghi N số nguyên A[1], A[2], .. A[N] (1 ≤ A[i] ≤ 1000)
+
+
+
+Dữ liệu ra
+Ghi ra độ dài của dãy con tăng dài nhất với mỗi test.
+
+
+Ví dụ
+Input #1 
+
+1
+6
+1 2 5 4 6 2
+Output #1 
+
+4
+
+CON5_21 - TỔNG BẰNG K
+ Báo lỗi
+Đề bài
+Cho một mảng A[] gồm N số nguyên và số K. Tính số cách lấy tổng các phần tử của A[] để bằng K. Phép lấy lặp các phần tử hoặc sắp đặt lại các phần tử được chấp thuận. Ví dụ với mảng A[] = {1, 5, 6}, K = 7 ta có 6 cách sau:
+
+7 = 1 + 1 + 1+1 + 1 + 1+1 (lặp số 1 7 lần)
+
+7 = 1 + 1 + 5 (lặp số 1)
+
+7 = 1 + 5 + 1 (lặp và sắp đặt lại số 1)
+
+7 = 1 + 6
+
+7 = 6 + 1
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưavào N và K; dòng tiếp theo đưa vào N số của mảng A[]; các số được viết cách nhau
+
+một vài khoảng trống.
+
+T, N, K, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤1000; 1≤A[i]≤100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng. Khi kết quả quá lớn đưa ra kết quả dướidạng modulo với 109+7
+
+
+Ví dụ
+Input #1 
+
+2
+3 7
+1 5 6
+4 14
+12 3 1 9
+Output #1 
+
+6
+150
+
+CON5_27 - Cái Túi
+ Báo lỗi
+Đề bài
+Một người có cái túi thể tích V (V<1000). Anh ta có N đồ vật cần mang theo (N≤1000), mỗi đồ vật có thể tích là A[i] (A[i]≤100) và giá trị là C[i] (C[i]≤100). Hãy xác định tổng giá trị lớn nhất của các đồ vật mà người đó có thể mang theo, sao cho tổng thể tích không vượt quá V.
+
+
+Dữ liệu vào
+Dòng đầu ghi số bộ test T (T<10)
+
+Mỗi bộ test gồm ba dòng. Dòng đầu ghi 2 số N và V. Dòng tiếp theo ghi N số của mảng A.Sau đó là một dòng ghi N số của mảng C.
+
+Dữ liệu vào luôn đảm bảo không có đồ vật nào có thể tích lớn hơn V
+
+
+Dữ liệu ra
+Với mỗi bộ test, ghi trên một dòng giá trị lớn nhất có thể đạt được.
+
+
+Ví dụ
+Input #1 
+
+1
+15 10
+5 2 1 3 5 2 5 8 9 6 3 1 4 7 8
+1 2 3 5 1 2 5 8 7 4 1 2 3 2 1
+Output #1 
+
+15
+
+CON5_28 - Biến đổi xâu
+ Báo lỗi
+Đề bài
+Cho hai xâu ký tự str1, str2 bao gồm các ký tự in thường và các thao tác dưới đây:
+
+Insert:chèn một ký tự bất kỳ vào str1.
+
+Delete:loại bỏ một ký tự bất kỳ trong str1.
+
+Replace:thay một ký tự bất kỳ trong str1.
+
+Nhiệm vụ của bạn là đếm số các phép Insert, Delete, Replace ít nhất thực hiện trên str1 để trở thành str2
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ đôi hai xâu str1 và str2.
+
+T, str1, str2 thỏa mãn ràng buộc: 1≤T≤100; 1≤length(str1),length(str2) ≤100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng
+
+
+Ví dụ
+Input #1 
+
+1
+geek gesek
+Output #1 
+
+1
+
+CON5_3 - DÃY CON CÓ TỔNG BẰNG S
+ Báo lỗi
+Đề bài
+Cho 
+N
+N số nguyên dương tạo thành dãy A={
+A
+1
+A 
+1
+​
+ , 
+A
+2
+A 
+2
+​
+ , ..., 
+A
+N
+A 
+N
+​
+ }. Tìm ra một dãy con của dãy 
+A
+A (không nhất thiết là các phần tử liên tiếp trong dãy) có tổng bằng 
+S
+S cho trước.
+
+
+Dữ liệu vào
+Dòng đầu ghi số bộ test 
+T
+T (
+T
+T<10). Mỗi bộ test có hai dòng, dòng đầu tiên ghi hai số nguyên dương 
+N
+N và 
+S
+S (
+0
+<
+N
+≤
+200
+0<N≤200) và 
+S
+S (
+0
+<
+S
+≤
+40000
+0<S≤40000). Dòng tiếp theo lần lượt ghi 
+N
+N số hạng của dãy 
+A
+A là các số 
+A
+1
+A 
+1
+​
+ , 
+A
+2
+A 
+2
+​
+ , ..., 
+A
+N
+A 
+N
+​
+  (0 < 
+A
+i
+A 
+i
+​
+ ≤ 200)
+
+
+Dữ liệu ra
+Với mỗi bộ test, nếu bài toán vô nghiệm thì in ra “NO”, ngược lại in ra “YES”
+
+
+Ví dụ
+Input #1 
+
+2
+5 6
+1 2 4 3 5
+10 15
+2 2 2 2 2 2 2 2 2 2
+Output #1 
+
+YES
+NO
+
+CON7_05 - DÃY NGOẶC ĐÚNG DÀI NHẤT
+ Báo lỗi
+Đề bài
+Cho một xâu chỉ gồm các kí tự ‘(‘ và ‘)’. Một dãy ngoặc đúng được định nghĩa như sau:
+
+- Xâu rỗng là 1 dãy ngoặc đúng.
+
+- Nếu A là 1 dãy ngoặc đúng thì (A) là 1 dãy ngoặc đúng.
+
+- Nếu A và B là 2 dãy ngoặc đúng thì AB là 1 dãy ngoặc đúng.
+
+Cho một xâu S. Nhiệm vụ của bạn là hãy tìm dãy ngoặc đúng dài nhất xuất hiện trong xâu đã cho.
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+
+- Mỗi test gồm một xâu S có độ dài không vượt quá 10
+5
+5
+  kí tự.
+
+
+Dữ liệu ra
+- Với mỗi test in ra một số nguyên là độ dài dãy ngoặc đúng dài nhất tìm được.
+
+
+Ví dụ
+Input #1 
+
+3
+((()
+)()())
+()(()))))
+Output #1 
+
+2
+4
+6
+
+CON7_11 - BIẾN ĐỔI TRUNG TỐ - HẬU TỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng trung tố về dạng hậu tố.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng bộ test T;
+
+- Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thứctiền tố exp.
+
+-T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+(A+(B+C)
+((A*B)+C)
+Output #1 
+
+ABC++
+AB*C+
+
+CON7_15 - BIẾN ĐỔI HẬU TỐ - TRUNG TỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng hậu tố về dạng trung tố.
+
+
+Dữ liệu vào
+-Dòng đầu tiên đưa vào số lượng bộ test T;
+
+- Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
+
+- T, exp thỏa màng ràng buộc: 1≤T≤100; 2≤length(exp)≤10^6
+
+.
+
+
+Dữ liệu ra
+- Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+ABC++
+AB*C+
+Output #1 
+
+(A+(B+C)
+((A*B)+C)
+
+CON7_22 - HÌNH CHỮ NHẬT LỚN NHẤT
+ Báo lỗi
+Đề bài
+Cho N cột, mỗi cột có chiều cao bằng H[i]. Bạn hãy tìm hình chữ nhật lớn nhất bị che phủ bởicác cột?
+
+Screenshot 2024-04-03 at 15.59.51.png
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+
+- Mỗi test bắt đầu bởi số nguyên N (N ≤ 100 000).
+
+- Dòng tiếp theo gồm N số nguyên H[i] (1 ≤ H[i] ≤ 10^9).
+
+
+Dữ liệu ra
+- Với mỗi test, in ra diện tích hình chữ nhật lớn nhất tìm được.
+
+
+Ví dụ
+Input #1 
+
+2
+7
+6 2 5 4 5 1 6
+3
+2 2 2
+Output #1 
+
+12
+6
+
+CON8_06 - SỐ 0 VÀ SỐ 9
+ Báo lỗi
+Đề bài
+Cho số tự nhiên N. Hãy tìm số nguyên dương X nhỏ nhất được tạo bởi số 9 và số 0 chia hết choN. Ví dụ với N = 5 ta sẽ tìm ra X = 90.
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi lại số lượng test T (T≤100).
+
+- Những dòng kế tiếp mỗi dòng ghi lại một test. Mỗi test là một số tự nhiên N đượcghi trên một dòng (N≤100).
+
+
+Dữ liệu ra
+- Đưa ra theo từng dòng số X nhỏ nhất chia hết cho N tìm được
+
+
+Ví dụ
+Input #1 
+
+2
+5
+7
+Output #1 
+
+90
+9009
+
+CON8_11 - BIẾN ĐỔI SỐ NGUYÊN TỐ
+ Báo lỗi
+Đề bài
+Cho cặp số S và T là các số nguyên tố có 4 chữ số (Ví dụ S = 1033, T = 8197 là các số nguyêntố có 4 chữ số). Hãy viết chương trình tìm cách dịch chuyển S thành T thỏa mãn đồng thời nhữngđiều kiện dưới đây:
+
+a) Mỗi phép dịch chuyển chỉ được phép thay đổi một chữ số của số ở bước trước đó (ví dụnếu S=1033 thì phép dịch chuyển S thành 1733 là hợp lệ);
+
+b) Số nhận được cũng là một số nguyên tố có 4 chữ số (ví dụ nếu S=1033 thì phép dịchchuyển S thành 1833 là không hợp lệ, và S dịch chuyển thành 1733 là hợp lệ);
+
+c) Số các bước dịch chuyển là ít nhất.
+
+Ví dụ số các phép dịch chuyển ít nhất để S = 1033 thành T = 8179 là 6 bao gồm cácphép dịch chuyển như sau:
+
+8179 <- 8779 <- 3779 <- 3739 <- 3733 <- 1733 <- 1033.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng test T (T≤100)
+
+- Những dòng kế tiếp mỗi dòng đưa vào một test. Mỗi test là một bộ đôi S, T.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+1033 8179
+1033 8779
+Output #1 
+
+6
+5
+
+CON8_16 - Quay hình vuông
+ Báo lỗi
+Đề bài
+Có một chiếc bảng hình chữ nhật với 6 miếng ghép, trên mỗi miếng ghép được điền một sốnguyên trong khoảng từ 1 đến 6. Tại mỗi bước, chọn một hình vuông (bên trái hoặc bên phải),rồi quay theo chiều kim đồng hồ.
+
+image.png
+
+Yêu cầu: Cho một trạng thái của bảng, hãy tính số phép biến đổi ít nhất để đưa bảng đến trạngthái đích.
+
+
+Dữ liệu vào
+- Dòng đầu tiên chứa 6 số là trạng thái bảng ban đầu (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
+
+- Dòng thứ hai chứa 6 số là trạng thái bảng đích (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
+
+
+Dữ liệu ra
+-In ra một số nguyên là đáp số của bài toán.
+
+
+Ví dụ
+Input #1 
+
+1 2 3 4 5 6
+4 1 2 6 5 3
+Output #1 
+
+2
+
