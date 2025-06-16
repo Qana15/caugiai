@@ -24,8 +24,6 @@
 #define all(M)              M.begin(), M.end()
 using namespace std;
 
-//_______________________NGUYỄN_NGỌC_TOÀN_______________________//
-
 int n, k;
 int M[1000];
 v(string) S;
@@ -56,3 +54,4 @@ int main() {
 		cout << endl;
 	}
 }
+
