@@ -1,0 +1,890 @@
+CON11_5 - DUYỆT CÂY 3
+ Báo lỗi
+Đề bài
+Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo Level-order. Phép duyệt level-order trên cây là phép thăm node theo từng mức của cây. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt level-order: 20 8 22 4 12 10 14.
+
+image.png
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng test T.
+
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó
+
+u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
+
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10^3; 1≤u,v<10^4
+
+
+Dữ liệu ra
+Đưa ra kết quả phép duyệt level-order theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2 
+2
+1 2 R 1 3 L
+4
+10 20 L 10 30 R 20 40 L 20 60 R
+Output #1 
+
+1 3 2
+10 20 30 40 60
+
+CON11_9 - KIỂM TRA NODE LÁ
+ Báo lỗi
+Đề bài
+Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem tất cả các node lá của cây có cùng một mức hay không? Ví dụ với cây dưới đây sẽ cho ta kết quả là Yes.
+
+image.png
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng test T.
+
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đóu là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x
+
+được viết cách nhau một vài khoảng trống.
+
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10^3; 1≤u, v≤10^4;
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2 
+2
+1 2 R 1 3 L
+4
+10 20 L 10 30 R 20 40 L 20 60 R
+Output #1 
+
+1
+0
+
+CON8_05 - SỐ NHỊ PHÂN TỪ 1 ĐẾN N
+ Báo lỗi
+Đề bài
+Cho số tự nhiên n. Hãy in ra tất cả các số nhị phân từ 1 đến n.
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi lại số lượng test T (T≤100).
+
+- Mỗi test là một số tự nhiên n được ghi trên một dòng (n≤10000).
+
+
+Dữ liệu ra
+- Đưa ra kết quả mỗi test trên một dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+2
+5
+Output #1 
+
+1 10
+1 10 11 100 101 110
+
+CON8_06 - SỐ 0 VÀ SỐ 9
+ Báo lỗi
+Đề bài
+Cho số tự nhiên N. Hãy tìm số nguyên dương X nhỏ nhất được tạo bởi số 9 và số 0 chia hết choN. Ví dụ với N = 5 ta sẽ tìm ra X = 90.
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi lại số lượng test T (T≤100).
+
+- Những dòng kế tiếp mỗi dòng ghi lại một test. Mỗi test là một số tự nhiên N đượcghi trên một dòng (N≤100).
+
+
+Dữ liệu ra
+- Đưa ra theo từng dòng số X nhỏ nhất chia hết cho N tìm được
+
+
+Ví dụ
+Input #1 
+
+2
+5
+7
+Output #1 
+
+90
+9009
+
+CON8_09 - BIẾN ĐỔI S – T
+ Báo lỗi
+Đề bài
+Cho hai số nguyên dương S và T (S, T<10000) và hai thao tác (a), (b) dưới đây:
+
+Thao tác (a): Trừ S đi 1 (S = S-1) ;
+
+Thao tác (b): Nhân S với 2 ( S = S*2);
+
+Hãy dịch chuyển S thành T sao cho số lần thực hiện các thao tác (a), (b) là ít nhất. Ví dụ với S=2, T=5 thì số các bước ít nhất để dịch chuyển S thành T thông qua 4 thao tác sau:
+
+Thao tác (a): 2*2 = 4;
+
+Thao tác (b): 4-1 = 3;
+
+Thao tác (a): 3*2 = 6;
+
+Thao tác (b): 6-1 = 5;
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
+
+- T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một bộ đôi S và T.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+3
+2 5
+3 7
+7 4
+Output #1 
+
+4
+4
+3
+
+CON8_11 - BIẾN ĐỔI SỐ NGUYÊN TỐ
+ Báo lỗi
+Đề bài
+Cho cặp số S và T là các số nguyên tố có 4 chữ số (Ví dụ S = 1033, T = 8197 là các số nguyêntố có 4 chữ số). Hãy viết chương trình tìm cách dịch chuyển S thành T thỏa mãn đồng thời nhữngđiều kiện dưới đây:
+
+a) Mỗi phép dịch chuyển chỉ được phép thay đổi một chữ số của số ở bước trước đó (ví dụnếu S=1033 thì phép dịch chuyển S thành 1733 là hợp lệ);
+
+b) Số nhận được cũng là một số nguyên tố có 4 chữ số (ví dụ nếu S=1033 thì phép dịchchuyển S thành 1833 là không hợp lệ, và S dịch chuyển thành 1733 là hợp lệ);
+
+c) Số các bước dịch chuyển là ít nhất.
+
+Ví dụ số các phép dịch chuyển ít nhất để S = 1033 thành T = 8179 là 6 bao gồm cácphép dịch chuyển như sau:
+
+8179 <- 8779 <- 3779 <- 3739 <- 3733 <- 1733 <- 1033.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng test T (T≤100)
+
+- Những dòng kế tiếp mỗi dòng đưa vào một test. Mỗi test là một bộ đôi S, T.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+1033 8179
+1033 8779
+Output #1 
+
+6
+5
+
+CON8_12 - KHOẢNG CÁCH XÂU KÝ TỰ
+ Báo lỗi
+Đề bài
+Cho tập n xâu ký tự S và hai xâu s, t€S. Ta giả thiết các xâu ký tự S[i]€S có độ dài bằng nhau.Hãy tìm khoảng cách đường đi ngắn nhất từ s đến t. Biết từ một xâu ký tự bất kỳ ta chỉ đượcphép dịch chuyển đến xâu khác với nó duy nhất 1 ký tự. Ví dụ ta có tập các từ S = { POON,TOON, PLEE, SAME, POIE, PLEA, PLIE, POIN }, s = TOON, t = PLEA ta có độ dài đườngđi ngắn nhất là 7 tương ứng với các phép dịch chuyển :
+
+TOON -> POON –> POIN –> POIE –>PLIE –> PLEE –> PLEA.
+
+
+Dữ liệu vào
+-Dòng đầu tiên đưa vào số lượng test T (T≤100).
+
+- Mỗi test được tổ chức thành 2 dòng. Dòng thứ nhất ghi lại n là số từ trong S và haitừ s, t. Dòng thứ 2 đưa vào n xâu xâu ký tự của S; các xâu ký tự được viết cáchnhau một vài khoảng trống, có độ dài không vượt quá 10 kí tự.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+1
+8 TOON PLEA
+POON TOON PLEE SAME POIE PLEA PLIE POIN
+Output #1 
+
+7
+
+CON8_15 - DI CHUYỂN TRONG MA TRẬN
+ Báo lỗi
+Đề bài
+Cho ma trận hai chiều 
+A
+A với kích thước 
+M
+M x 
+N
+N. Nhiệm vụ của bạn hãy tìm số bước đi ít nhất dịch chuyển từ vị trí 
+A
+[
+1
+]
+[
+1
+]
+A[1][1]đến vị trí 
+A
+[
+M
+]
+[
+N
+]
+A[M][N]. Biết mỗi bước đi từ ô 
+A
+[
+i
+]
+[
+j
+]
+A[i][j], ta chỉ được phép dịch chuyển đến vị trí 
+A
+[
+i
+]
+[
+j
++
+A
+[
+i
+]
+[
+j
+]
+]
+A[i][j+A[i][j]] hoặcvị trí 
+A
+[
+i
++
+A
+[
+i
+]
+[
+j
+]
+]
+[
+j
+]
+A[i+A[i][j]][j] bên trong ma trận.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng test 
+T
+T.
+
+- Dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số 
+M
+,
+N
+M,N; phần thứ hai là các phần tử của ma trận 
+A
+[
+]
+[
+]
+A[][]; các số được viết cách nhau một vài khoảng trống.
+
+- 
+T
+,
+M
+,
+N
+,
+A
+[
+i
+]
+[
+j
+]
+T,M,N,A[i][j] thỏa mãn ràng buộc: 
+1
+≤
+T
+≤
+100
+1≤T≤100; 
+1
+≤
+M
+,
+N
+,
+A
+[
+i
+]
+[
+j
+]
+1≤M,N,A[i][j]≤
+1
+0
+3
+10 
+3
+ .
+
+.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng. In ra -1 nếu không tìm được đáp án.
+
+
+Ví dụ
+Input #1 
+
+1
+3 3
+2 1 2
+1 1 1
+1 1 1
+Output #1 
+
+2
+
+CON8_16 - Quay hình vuông
+ Báo lỗi
+Đề bài
+Có một chiếc bảng hình chữ nhật với 6 miếng ghép, trên mỗi miếng ghép được điền một sốnguyên trong khoảng từ 1 đến 6. Tại mỗi bước, chọn một hình vuông (bên trái hoặc bên phải),rồi quay theo chiều kim đồng hồ.
+
+image.png
+
+Yêu cầu: Cho một trạng thái của bảng, hãy tính số phép biến đổi ít nhất để đưa bảng đến trạngthái đích.
+
+
+Dữ liệu vào
+- Dòng đầu tiên chứa 6 số là trạng thái bảng ban đầu (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
+
+- Dòng thứ hai chứa 6 số là trạng thái bảng đích (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
+
+
+Dữ liệu ra
+-In ra một số nguyên là đáp số của bài toán.
+
+
+Ví dụ
+Input #1 
+
+1 2 3 4 5 6
+4 1 2 6 5 3
+Output #1 
+
+2
+
+CON8_19 - DI CHUYỂN TRONG KHÔNG GIAN
+ Báo lỗi
+Đề bài
+Cho một hình hộp chữ nhật có kích thước A x B x C, trong đó A là chiều cao, B là chiều rộngvà C là chiều dài. Mỗi ô có thể là một ô trống ‘.’ hoặc vật cản ‘#’.
+
+Mỗi bước, bạn được phép di chuyển sang một ô kề bên cạnh (không được đi chéo).
+
+Nhiệm vụcủa bạn là tìm đường đi ngắn nhất bắt đầu ‘S’ tới vị trí kết thúc ‘E’.
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (1 ≤ N ≤ 50).
+
+- Mỗi test bắt đầu bởi 3 số nguyên A, B, C (A, B, C ≤ 30).
+
+- Tiếp theo là A khối, mỗi khối gồm B x C kí tự mô tả một lát cắt của hình hộp chữ nhật.
+
+Giữa 2 khối có một dấu xuống dòng.
+
+
+Dữ liệu ra
+- In ra một số nguyên là đường đi ngắn nhất từ S tới E. Nếu không di chuyển được, in ra -1.
+
+
+Ví dụ
+Input #1 
+
+2
+3 4 5
+S....
+.###.
+.##..
+###.#
+#####
+#####
+##.##
+##...
+#####
+#####
+#.###
+####E
+1 3 3
+S##
+#E#
+###
+Output #1 
+
+11
+-1
+
+CON8_20 - HEXGAME
+ Báo lỗi
+Đề bài
+HEXGAME là một trò chơi xếp hình gồm 10 miếng ghép hình lục giác đều, trên mỗi miếngghép được điền một số nguyên, có 8 miếng được điền số từ 1 đến 8 và có hai miếng điền số 0.
+
+Các miếng liên kết với nhau tạo thành lưới tổ ong. Ban đầu các miếng ghép ở vị trí như hình vẽ.
+
+Tại mỗi bước, chọn một miếng ghép có đúng 6 miếng ghép kề cạnh làm tâm, rồi xoay một nấc6 miếng ghép kề cạnh đó theo chiều kim đồng hồ. Như vậy chỉ có hai cách chọn tâm, đó là chọntâm bên trái và chọn tâm bên phải.
+
+image.png
+
+Yêu cầu: Cho một trạng thái của trò chơi (nhận được sau một dãy biến đổi từ trạng thái ban đầu),hãy tính số phép biến đổi ít nhất để đưa về trạng thái ban đầu.
+
+
+Dữ liệu vào
+- Dòng đầu tiên chứa 3 số ở 3 miếng ghép dòng thứ nhất (thứ tự từ trái qua phải).
+
+- Dòng đầu tiên chứa 4 số ở 4 miếng ghép dòng thứ hai (thứ tự từ trái qua phải).
+
+- Dòng đầu tiên chứa 3 số ở 3 miếng ghép dòng thứ ba (thứ tự từ trái qua phải).
+
+
+Dữ liệu ra
+-In ra một số nguyên là số phép biến đổi ít nhất để đưa được về trạng thái ban đầu.
+
+
+Ví dụ
+Input #1 
+
+1 0 2
+8 6 0 3
+7 5 4
+Output #1 
+
+5
+
+CON8_4 - GIÁ TRỊ NHỎ NHẤT CỦA XÂU
+ Báo lỗi
+Đề bài
+Cho xâu ký tự S[] bao gồm các ký tự in hoa [A, B, ...,Z]. Ta định nghĩa giá trị của xâu S[] làtổng bình phương số lần xuất hiện mỗi ký tự trong xâu. Ví dụ với xâu S[] = “AAABBCD” ta cóF(S) = 
+3
+2
+3 
+2
+  + 
+2
+2
+2 
+2
+  + 
+1
+2
+1 
+2
+  + 
+1
+2
+1 
+2
+  = 15. Hãy tìm giá trị nhỏ nhất của xâu S[] sau khi loại bỏ K ký tự trongxâu.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng test 
+T
+T (
+T
+≤
+100
+T≤100).
+
+- Mỗi test được tổ chức thành 2 dòng. Dòng thứ nhất ghi lại số 
+K
+K. Dòng thứ 2 ghi lại xâu ký tự S[] có độ dài không vượt quá 
+1
+0
+6
+10 
+6
+ .
+
+
+Dữ liệu ra
+- Đưa ra giá trị nhỏ nhất của mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+0
+ABCC
+1
+ABCC
+Output #1 
+
+6
+3
+
+CON9_05 - BIỂU DIỄN ĐỒ THỊ CÓ HƯỚNG.
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết chương trìnhthực hiện chuyển đổi biểu diễn đồ thị dưới dạng danh sách kề.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiênđưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị; |E| dòng tiếp theođưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+Đưa ra danh sách kề của các đỉnh tương ứng theo khuôn dạng của ví dụ dưới đây. Cácđỉnh trong danh sách in ra theo thứ tự tăng dần.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9
+1 2
+2 5
+3 1
+3 2
+3 5
+4 3
+5 4
+5 6
+6 4
+Output #1 
+
+1: 2
+2: 5
+3: 1 2 5
+4: 4
+5: 4 6
+6: 4
+
+CON9_14 - KIỂM TRA ĐƯỜNG ĐI
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng có N đỉnh và M cạnh. Có Q truy vấn, mỗi truy vấn yêu cầu trả lời câu hỏi giữa 2đỉnh x và y có tồn tại đường đi tới nhau hay không?
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+
+- Mỗi test gồm 2 số nguyên N, M (1 ≤ N, M ≤ 1000).
+
+- M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối giữa đỉnh u và v.
+
+- Dòng tiếp là số lượng truy vấn Q (1 ≤ Q ≤ 1000).
+
+- Q dòng tiếp theo, mỗi dòng gồm 2 số nguyên x và y.
+
+
+Dữ liệu ra
+Với mỗi truy vấn, in ra “YES” nếu có đường đi từ x tới y, in ra “NO” nếu ngược lại.
+
+
+Ví dụ
+Input #1 
+
+1
+5 5
+1 2
+2 3
+3 4
+1 4
+5 6
+2
+1 5
+2 4
+Output #1 
+
+NO
+YES
+
+CON9_15 - ĐẾM SỐ THÀNH PHẦN LIÊN THÔNG VỚI DFS.
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm số thành phầnliên thông của đồ thị bằng thuật toán DFS.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào hai số |V|, |E| tương ứng với số đỉnh và số cạnh; Dòng tiếp theo đưa vào các bộ đôiu∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10
+3
+3
+  ; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+-Đưa ra số thành phần liên thông của đồ thị bằng thuật toán DFS.
+
+
+Ví dụ
+Input #1 
+
+1
+6 6
+1 2 1 3 2 3 3 4 3 5 4 5
+Output #1 
+
+2
+
+CON9_16 - TÌM SỐ THÀNH PHẦN LIÊN THÔNG VỚI BFS
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm số thành phầnliên thông của đồ thị bằng thuật toán BFS.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào hai số |V|, |E| tương ứng với số đỉnh và số cạnh; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+-Đưa ra số thành phần liên thông của đồ thị bằng thuật toán BFS.
+
+
+Ví dụ
+Input #1 
+
+1
+6 6
+1 2 1 3 2 3 3 4 3 5 4 5
+Output #1 
+
+2
+
+CON9_30 - CHU TRÌNH EULER TRONG ĐỒ THỊ CÓ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng liên thông yếu G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãykiểm tra xem đồ thị có chu trình Euler hay không?
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào hai số |V|, |E| tương ứng với số đỉnh, số cạnh của đồ thị; Dòng tiếp theo đưa vàocác bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+Đưa ra 1, 0 kết quả mỗi test theo từng dòng tương ứng với đồ thị có chu trình Euler vàtrường hợp không tồn tại đáp án.
+
+
+Ví dụ
+Input #1 
+
+2
+6 10
+1 2 2 4 2 5 3 1 3 2 4 3 4 5 5 3 5 6 6 4
+3 3
+1 2 2 3 1 3
+Output #1 
+
+1
+0
+
+CON9_32 - SỐ LƯỢNG HÒN ĐẢO
+ Báo lỗi
+Đề bài
+Cho một bản đồ kích thước N x M được mô tả bằng ma trận A[][].A[i][j] = 1 có nghĩa vị trí (i, j) là nổitrên biển. 2 vị trí (i, j) và (x, y) được coi là liền nhau nếu như nó có chung đỉnh hoặc chung cạnh. Một hònđảo là một tập hợp các điểm (i, j) mà A[i][j] = 1 và có thể di chuyển giữa hai điểm bất kì trong đó.
+
+Nhiệm vụ của bạn là hãy đếm số lượng đảo xuất hiện trên bản đồ.
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+
+- Mỗi test bắt đầu bởi 2 số nguyên N và M (1 ≤ N, M ≤ 500).
+
+- N dòng tiếp theo, mỗi dòng gồm M số nguyên A[i][j].
+
+
+Dữ liệu ra
+- Với mỗi test, in ra số lượng hòn đảo tìm được.
+
+
+Ví dụ
+Input #1 
+
+1
+5 5
+1 1 0 0 0
+0 1 0 0 1
+1 0 0 1 1
+0 0 0 0 0
+1 0 1 0 1
+Output #1 
+
+5
+
+CON9_9 - BFS trên đồ thị có hướng
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toánduyệt theo chiều rộng bắt đầu tại đỉnh u∈V (BFS(u)=?)
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào ba số |V|, |E|, u∈V tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếptheo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra danh sách các đỉnh được duyệt theo thuật toán BFS(u) của mỗi test theo khuôndạng của ví dụ dưới đây.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 1
+1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 4
+Output #1 
+
+1 2 5 4 6 3
+
+CTDL036 - KIỂM TRA ĐỒ THỊ CÓ PHẢI LÀ CÂY HAY KHÔNG
+ Báo lỗi
+Đề bài
+Một đồ thị N đỉnh là một cây, nếu như nó có đúng N-1 cạnh và giữa 2 đỉnh bất kì, chỉ tồn tại duy nhất 1 đường đi giữa chúng. Cho một đồ thị N đỉnh và N-1 cạnh, hãy kiểm tra đồ thị đã cho có phải là một cây hay không?
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (T <= 20).
+
+-Mỗi test bắt đầu bởi số nguyên N (1 <= N <= 1000).
+
+-N-1 dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối giữa đỉnh u và v.
+
+
+Dữ liệu ra
+- Với mỗi test, in ra “YES” nếu đồ thị đã cho là một cây, in ra “NO” trong trường hợp ngược lại.
+
+
+Ví dụ
+Input #1 
+
+2 
+4 
+1 2 
+1 3 
+2 4 
+4 
+1 2 
+1 3 
+2 3
+Output #1 
+
+YES
+NO
+
+Con11_7 - duyệt cây theo xoắn ốc
+ Báo lỗi
+Đề bài
+Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc (spiral-order). Phép. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt spiral-order: 1 2 3 4 5 6 7.
+
+image.png
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng test T.
+
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó
+
+u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, xđược viết cách nhau một vài khoảng trống.
+
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10^3; 1≤u, v≤10^4;
+
+
+Dữ liệu ra
+Đưa ra kết quả phép duyệt level-order theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+2
+1 2 R 1 3 L
+4
+10 20 L 10 30 R 20 40 L 20 60 R
+Output #1 
+
+1 3 2
+10 20 30 60 40
+
+SCTDLTree004 - Tìm cây nhị phân 001
+ Báo lỗi
+Đề bài
+Cho root một câynhị phân, hãy tưởng tượng bạn đang đứng ở phía bên phải của nó, trả về các giátrị của các nút mà bạn có thể thấy được sắp xếp từ trên xuống dưới.
+
+Ví dụ:
+
+image.png
+
+
+Dữ liệu vào
+- Số lượng testcaset(t≥1).
+
+- Mỗi testcase nhập vào một mảng biểu diễn cây nhịphân trong đó -1 biểu thị nút cha không có nút lá.
+
+
+Dữ liệu ra
+- Vớimỗi test đưa ra kết quả tìm được
+
+
+Ví dụ
+Input #1 
+
+1
+1 2 3 -1 5 -1 4
+Output #1 
+
+1 3 4
+
+
+
