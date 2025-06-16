@@ -30,6 +30,7 @@ int main() {
 		for (int i = 0; i < m; i++) {
 			int a, b; cin >> a >> b;
 			A[a].push_back(b);
+			A[b].push_back(a);
 		}
 		BFS(u);
 		cout << endl;

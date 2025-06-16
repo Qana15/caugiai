@@ -1,37 +1,31 @@
 #include<iostream>
 #include<vector>
-#include<queue>
 #include<cstring>
 using namespace std;
+int n, m, u;
 bool check[1001];
 vector<int> A[1001];
-void BFS(int u) {
-	queue<int> X;
-	X.push(u);
+void DFS(int u) {
+	cout << u << " ";
 	check[u] = true;
-	while (X.size()) {
-		int x = X.front();
-		X.pop();
-		cout << x << " ";
-		for (int v : A[x]) {
-			if (!check[v]) {
-				X.push(v);
-				check[v] = true;
-			}
-		}
+	for (int v : A[u]) {
+		if (!check[v])
+			DFS(v);
 	}
 }
 int main() {
 	int t; cin >> t;
 	while (t--) {
+		cin >> n >> m >> u;
 		memset(check, false, sizeof(check));
 		for (int i = 0; i < 1001; i++)A[i].clear();
-		int n, m, u; cin >> n >> m >> u;
 		for (int i = 0; i < m; i++) {
 			int a, b; cin >> a >> b;
 			A[a].push_back(b);
+			
 		}
-		BFS(u);
+		DFS(u);
 		cout << endl;
+
 	}
 }
